@@ -1,5 +1,4 @@
 
-
 ## Display Virtual Machines Name, Location, Resource Group Name and Tags
 $resourceType = 'microsoft.compute/virtualMachines'
 $query = "where type =~ '$resourceType' | project name, location, resourceGroup, tags"
