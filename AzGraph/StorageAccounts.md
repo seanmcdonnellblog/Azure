@@ -1,4 +1,14 @@
-# Azure Search AzGraph Examples
+# Work with the Azure Resource Graph
+The following examples show how to query Azure Storage accounts via the Azure Resource Graph. The Azure Resource Graph query lanaguage is built on the Azure Data Explorere Query Language (Kusto) and supports tabular data operators such as summarize, count and functions ( tostring() ago)
+
+https://docs.microsoft.com/en-us/azure/kusto/query/queries
+
+To get started, you will need to install the Az.ResourceGraph Module
+**Install-Module -Name Az.ResourceGraph**
+**Get-Command -Module 'Az.ResourceGraph**
+
+Help commands
+**Get-Help Search-AzGraph -Examples
 
 ## Find tags for Storage Accounts
 $resourceType = 'microsoft.storage/storageAccounts'
@@ -27,5 +37,5 @@ $storagePuplicAccess
 ## Find any storage accounts which are not located in Primary Loation UK South
 $resourceType = 'microsoft.storage/storageAccounts'
 $query = "where type =~ '$resourceType' and aliases['Microsoft.Storage/storageAccounts/primaryLocation'] != 'uksouth' | project name, location, resourceGroup"
-$storagePuplicAccess = Search-AzGraph -Query $query
-$storagePuplicAccess
+$storageLocation = Search-AzGraph -Query $query
+$storageLocation
