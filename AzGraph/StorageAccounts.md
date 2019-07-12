@@ -11,8 +11,8 @@ Help commands<br/>
 **Get-Help Search-AzGraph -Examples**
 
 ## Find tags for Storage Accounts
-PS C:\>$resourceType = 'microsoft.storage/storageAccounts'
-PS C:\>$query = "where type =~ '$resourceType' | project name, resourceGroup, type, location, tags"
+```$resourceType = 'microsoft.storage/storageAccounts'<br/>
+```$query = "where type =~ '$resourceType' | project name, resourceGroup, type, location, tags"
 PS C:\>$storageTags = Search-AzGraph -Query $query
 PS C:\>$storageTags
 
