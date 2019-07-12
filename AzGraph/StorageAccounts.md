@@ -5,10 +5,11 @@ https://docs.microsoft.com/en-us/azure/kusto/query/queries
 
 To get started, you will need to install the Az.ResourceGraph Module
 **Install-Module -Name Az.ResourceGraph**
+
 **Get-Command -Module 'Az.ResourceGraph**
 
 Help commands
-**Get-Help Search-AzGraph -Examples
+**Get-Help Search-AzGraph -Examples**
 
 ## Find tags for Storage Accounts
 $resourceType = 'microsoft.storage/storageAccounts'
