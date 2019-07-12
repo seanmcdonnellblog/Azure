@@ -3,12 +3,11 @@ The following examples show how to query Azure Storage accounts via the Azure Re
 
 https://docs.microsoft.com/en-us/azure/kusto/query/queries
 
-To get started, you will need to install the Az.ResourceGraph Module
-**Install-Module -Name Az.ResourceGraph**
-
+To get started, you will need to install the Az.ResourceGraph Module<br/>
+**Install-Module -Name Az.ResourceGraph**<br/>
 **Get-Command -Module 'Az.ResourceGraph**
 
-Help commands
+Help commands<br/>
 **Get-Help Search-AzGraph -Examples**
 
 ## Find tags for Storage Accounts
