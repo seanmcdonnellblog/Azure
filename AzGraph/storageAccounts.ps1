@@ -1,7 +1,7 @@
 Install-Module -Name Az.ResourceGraph
 Get-Command -Module 'Az.ResourceGraph
 
-Help commands<br/>
+## Help commands
 **Get-Help Search-AzGraph -Examples**
 
 ## Find tags for Storage Accounts
