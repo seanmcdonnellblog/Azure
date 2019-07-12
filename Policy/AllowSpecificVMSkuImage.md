@@ -1,5 +1,9 @@
-#
-This Policy has been created to only allow the following Microsoft Server images for a particular resource group\n- 2019-Datacenter\n- 2016-Datacenter\n\nThis could be extended to add a specific version or template if required.
+# Allow Specific Virtual Machine SKU Image
+This Policy has been created to only allow the following Microsoft Server images for a particular resource group <\br>
+- 2019-Datacenter <\br>
+- 2016-Datacenter <\br>
+
+This could be extended to add a specific version or template if required.
 
 ```
 {
