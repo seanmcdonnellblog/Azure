@@ -18,7 +18,7 @@ $storageTags = Search-AzGraph -Query $query
 $storageTags
 ```
 
-## Find any public facing Storage Accounts
+## Display Count for the Service Tag
 ```
 $resourceType = 'microsoft.storage/storageAccounts'
 $query = "where type =~ '$resourceType' | project tag = tostring(tags.Service) | summarize count() by tag"
