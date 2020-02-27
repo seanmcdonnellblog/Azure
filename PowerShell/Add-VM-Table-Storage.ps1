@@ -107,8 +107,6 @@ Function add-VMHistory
 }
 add-VMHistory -vaultName $vaultName -storageKey $StorageKey -StorageAccount $storageAccount -table $table -resourceGroup $resourceGroup
 
-#$vaultName = "UKS-CORE-KV"
-#$storageKey = 'StorageAccountKey'
-#$StorageAccountName = 'ukscorestdtable01'
+
 
     
