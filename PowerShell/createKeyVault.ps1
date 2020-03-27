@@ -64,12 +64,10 @@ $existingVault = Get-AzKeyVault -Name $keyVaultName -ResourceGroupName $resource
 if(!$existingVault){
     Write-Host "Key Vault $($keyVaultName) Does not exist"
     $keyVault = New-AzKeyVault -Name $keyVaultName -ResourceGroupName $resourceGroup -Location $Location
-
+    Start-Sleep -Seconds 20
 }elseif($existingVault){
     write-host "Vault $($existingVault.VaultName) already exists, using this Vault"
 }
-
-Start-Sleep -Seconds 20
 
 # Get the Service Principal 
 $spApp = Get-AzureADApplication -Filter "DisplayName eq '$($servicePrinicpalName)'"
