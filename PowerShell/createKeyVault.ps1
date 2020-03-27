@@ -57,8 +57,6 @@
 $securedclientID =  ConvertTo-SecureString -String $clientID -AsPlainText -Force
 $securedclientSecret =  ConvertTo-SecureString -string $clientSecret -AsPlainText -Force
 $securedtenantID =  ConvertTo-SecureString -string $tenantID -AsPlainText -Force
-$keyVaultName = "AZ-DEVOPS02-KV"
-$resourceGroup = "UKS-AZUREBUILD-RG"
 
 # Create New KeyVault
 $existingVault = Get-AzKeyVault -Name $keyVaultName -ResourceGroupName $resourceGroup
