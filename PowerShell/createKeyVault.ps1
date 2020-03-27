@@ -1,5 +1,4 @@
 <# 
- 
  .DESCRIPTION
   This script will create or use an Existing Key Vault, followed by adding 3 secrets for a service principal
     - ClientID 
@@ -27,14 +26,13 @@
 
  .EXAMPLE
   # Test ARM template file with parameters, variables, functions, resources and outputs:
-
   .\keyvault-AzureDevOps.ps1 -keyVaultName AZ-DEVOPS01-KV  -Location "UK South" -resourceGroup UKS-AZUREBUILD-RG -servicePrinicpalName Azure-Build-ServicePrincipal -clientID xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -clientSecret xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -tenantID xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 
   
 #>
 
 [CmdLetBinding()]
     param (
-	    [Parameter(Mandatory=$true)]
+	[Parameter(Mandatory=$true)]
 	    [string]$keyVaultName,
 
         [Parameter(Mandatory=$true)]
