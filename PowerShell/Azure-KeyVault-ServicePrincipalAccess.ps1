@@ -4,7 +4,7 @@
     - ClientID 
     - ClientSecret
     - TenantID
-   Once the key vault is created, the service principal is provided Get and List permissions to fetch the keys.  
+   Once the key vault is created, the service principal is provided Get and List permissions to fetch the secrets from the Key Vault.  
 
  .PARAMETER -keyVaultName
   The name of the existing or new Key Vault
