@@ -10,7 +10,7 @@
 	    	[string] $subID,
     	)
 
-# Define GRAPH API Token details for Service Principal
+# Define API Token details for Service Principal
 $ReqTokenBody = @{
     Grant_Type    = "client_credentials"
     client_Id     = $appID
@@ -19,7 +19,7 @@ $ReqTokenBody = @{
     Tenant_Name   = $subID
 }
 
-# Obtain GRAPH API Token for Service Principal
+# Obtain API Token for Service Principal
 $TokenResponse = Invoke-RestMethod -Uri "https://login.microsoftonline.com/$($ReqTokenBody.Tenant_Name)/oauth2/v2.0/token" -Method POST -Body $ReqTokenBody
 
 $TokenResponse
