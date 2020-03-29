@@ -7,7 +7,7 @@
 	    	[string] $appSecret,
  
 	    	[Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-	    	[string] $subID,
+	    	[string] $subID
     	)
 
 # Define API Token details for Service Principal
