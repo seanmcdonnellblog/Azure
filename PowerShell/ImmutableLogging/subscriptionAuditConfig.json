@@ -1,0 +1,23 @@
+{
+ "properties": {
+    "storageAccountId": "subscriptions/0000000-0000-0000-0000-000000000/resourceGroups/resourceGroupName/providers/Microsoft.Storage/storageAccounts/storAccountName",
+    "logs": [
+      {
+        "category": "Administrative",
+        "enabled": true
+      },
+      {
+        "category": "Security",
+        "enabled": true
+      },
+      {
+        "category": "ServiceHealth",
+        "enabled": true
+      },
+      {
+        "category": "Policy",
+        "enabled": true
+      }
+    ]
+  }
+}
