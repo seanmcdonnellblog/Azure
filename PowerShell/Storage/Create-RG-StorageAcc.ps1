@@ -3,17 +3,17 @@
         	[Parameter(Mandatory=$true, ValueFromPipeline=$true)]
         	[String] $location,
 
-	    	  [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-	    	  [string] $resourceGroup,
+	    	[Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+	    	[string] $resourceGroup,
  
-	    	  [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-	    	  [string] $storAccountName,
+	    	[Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+	    	[string] $storAccountName,
 
-          [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-	    	  [string] $storSKU,
+          	[Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+	    	[string] $storSKU,
 
-          [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-	    	  [string] $storType
+          	[Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+	    	[string] $storType
     	)
 
 $rgName = Get-AzResourceGroup -ResourceGroupName $resourceGroup -ErrorAction SilentlyContinue
