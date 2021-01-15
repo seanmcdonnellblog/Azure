@@ -1,0 +1,7 @@
+ResourceGroup,nicName,Tags
+UKS-AZUREBUILD-RG,uksazdevops1,BusinessUnit=IT;Environment=Sandbox;Category=Infrastructure;Service=DevOps;Role=vNIC
+UKS-AZUREBUILD-RG,uksazdevops2,BusinessUnit=IT;Environment=Sandbox;Category=Infrastructure;Service=DevOps;Role=vNIC
+UKS-AZUREBUILD-RG,uksazdevops3,BusinessUnit=IT;Environment=Sandbox;Category=Infrastructure;Service=DevOps;Role=vNIC
+UKS-AZUREBUILD-RG,uksazdevops4,BusinessUnit=IT;Environment=Sandbox;Category=Infrastructure;Service=DevOps;Role=vNIC
+UKS-AZUREBUILD-RG,uksazdevops5,BusinessUnit=IT;Environment=Sandbox;Category=Infrastructure;Service=DevOps;Role=vNIC
+UKS-AZUREBUILD-RG,uksazdevops6,BusinessUnit=IT;Environment=Sandbox;Category=Infrastructure;Service=DevOps;Role=vNIC
