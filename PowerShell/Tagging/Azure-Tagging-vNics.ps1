@@ -21,7 +21,7 @@
 
 Param (
 	[Parameter(Mandatory=$true)][string]$DeployCSV,
-  [Parameter(Mandatory=$true)][string]$subID
+  	[Parameter(Mandatory=$true)][string]$subID
 )
 
 #Log in to subscription
@@ -39,7 +39,7 @@ if (!(Test-Path -Path $DeployCSV)) {
     Exit
 }
 
-# Delete tags from vNIC
+# Delete exisitng tags from vNICS
 function DeleteTag {
     Param ($rgName, $nicName)
     
