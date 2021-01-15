@@ -1,3 +1,0 @@
-ResourceGroup,VMName,Tags
-SY-SYMLCP-PR-RG,SYLCPAPPPR01,Environment=PRD;Category=Application;Service=Symantec;CreatedBy=FOM;Role=Log Collector;ManagedByTeam=CMS;ManagedByContact=Stateplus_AO_PDC_Team@accenture.com;StartupPriority=10;ScheduledShutdown=No;CostCentre=3061;AssetClassification=HighlyProtected
-ME-SYMLCP-PR-RG,MELCPAPPPR01,Environment=DR;Category=Application;Service=Symantec;CreatedBy=FOM;Role=Log Collector;ManagedByTeam=CMS;ManagedByContact=Stateplus_AO_PDC_Team@accenture.com;StartupPriority=10;ScheduledShutdown=No;CostCentre=3061;AssetClassification=HighlyProtected
