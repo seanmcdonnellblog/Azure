@@ -2,7 +2,7 @@ Install-Module -Name Az.ResourceGraph -Force
 # Global Variables
 $resourceType = 'microsoft.network/virtualNetworks'
 
-# Display Virtual Machines Name, Location, Resource Group Name and Tags
+# Display Virtual Network Name, Location, Resource Group Name, Addressing and Subnets
 $query = "Resources | where type =~ '$resourceType'" 
 $allVnets= Search-AzGraph -Query $query
 
