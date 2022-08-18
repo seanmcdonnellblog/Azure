@@ -16,7 +16,7 @@ Foreach($category in $categories){
                      @{Name="Policy Type";expression={$_.Properties.policyType}},`                     
                      @{Name="Category";expression={$_.Properties.metadata.category}}
 
-    $policy | Export-Excel -Path "C:\Temp\AzurePolicy\AzurePolicy-Builtin-Policies.xlsx" -AutoSize -TableStyle Medium16 -WorksheetName $category -ConditionalText $(
+    $policy | Export-Excel -Path ".\AzurePolicy-Builtin-Policies.xlsx" -AutoSize -TableStyle Medium16 -WorksheetName $category -ConditionalText $(
                 New-ConditionalText Deprecated DarkRed LightPink
                 New-ConditionalText Preview Blue Cyan
             )
